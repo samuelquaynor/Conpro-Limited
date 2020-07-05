@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-primary: 'Montserrat',sans-serif;
+    --ff-secondary: 'Montserrat', monospace;
+
+    --ff-reg: 500;
+    --ff-bold: 1000;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #28156d;
+    --clr-ash: #777777;
+    --clr-orange: #e04622;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px){
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 2.5rem;
+        --fs-h3: 1.5rem;
+        --fs-body:1.125rem;
+    }
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--clr-accent);
+    margin: 0;
+    margin-bottom: 0;
+    font-size: var(--fs-body);
+}
+/*----Navigation----*/
+#nav-bar {
+  position: static;
+  top: 0;
+  z-index: 10;
+}
+.navbar-brand img{
+  height: 80px;
+}
+.navbar-nav li {
+  text-align: left;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+}
+#nav-bar ul li a:hover{
+  color: var(--clr-accent)!important;
+}
+.navbar-toggler{
+  border: none!important;
+}
+.navbar-collapse{
+  color: var(--clr-ash)!important;
+  font-weight: 500;
+  font-size: 17px;
+}
+.btn-outline-primary{
+  margin-left: 250px;
+  margin-right: 50px;
+}
+#slider{
+  width: 100%;
+  display: relative;
+}
+.carousel-caption
+{
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial!important;
+}
+.carousel-caption h5{
+  color: var(--clr-light);
+  font-size: 42px;
+}
+@media (min-width: 768px){
+.carousel-caption{
+	top: 32%;
+	transform: translateY(-50%);
+	bottom: initial !important;
+}
+.carousel-inner{
+    height: 567px;
+}
+}
+/*---About---*/
+#about{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: var(--clr-ash );
+}
+.about-head
+{
+  color: var(--clr-dark) !important;
+}
+#about .btn{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.about-content{
+  padding-top: 20px;
+}
+.btn-outline-primary:hover {
+  background-color: var(--clr-accent)!important;
+  border-color: var(--clr-accent)!important;
+  color: var(--clr-light)!important;
+}
+.btn-outline-primary{
+  border-color: var(--clr-accent)!important;
+  color: var(--clr-accent)!important;
+}
+.skills-bar p{
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.progress-bar{
+  border-radius: 16px;
+  background-color: #28156de0!important;
+}
+.progress{
+  border-radius:16px !important;
+  margin-bottom: 20px;
+}
+/*----Services-----*/
+#services{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient(
+  rgba(0, 0, 0, 0.452),
+  rgba(0, 0, 0, 0.596)),
+  url(../images/services.jpg);
+  object-fit: cover;
+  background-size: cover;
+  /*height: 600px!important;*/
+}
+#services h1{
+  text-align: center;
+  color: var(--clr-light)!important;
+  padding-bottom: 10px;
+}
+.container > .services{
+  color: var(--clr-light)!important;
+}
+#services h1::after {
+  content: '';
+  background: var(--clr-light)!important;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.icon{
+  font-size: 40px;
+  margin:20px auto;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid var(--clr-light);
+  border-radius: 40%;
+}
+#services p{
+  font-size: 14px;
+  margin-top: 20px;
+}
+.services .col-md-3:hover{
+  background: var(--clr-accent);
+  cursor: pointer;
+  transition: 0.7s;
+  border-radius: 5%;
+}
+/*-------BlockQuote-------*/
+blockquote::before{
+  content: open-quote;
+  font-size: 3.8em;
+  color: rgba(211, 211, 211, 0.658);
+}
+blockquote::after{
+  content: close-quote;
+  font-size: 3.8em;
+  color: rgba(211, 211, 211, 0.658);
+}
+@media (min-width: 1000px) {
+  blockquote::before{
+    margin-left: 200px;
+  }
+  blockquote::after{ 
+    margin-left: 1000px;
+  }
+}
+.container-b{
+  margin: 10px 30px;
+  padding: 25px;
+  background: #7777770a;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0;
+}
+.blockquote-text{
+  color: #6e6e6e;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 0;
+  font-weight: 400;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.b-text{
+  font: 0.8rem;
+  text-align: center;
+  font-size: 15px;
+}
+/*-----footer-----*/
+footer{
+  background-color: var(--clr-accent);
+  color: var(--clr-light);
+  font-size: 12px;
+  text-align: center;
+}
+.footer-copyright{
+  padding: 30px 0;
+}
