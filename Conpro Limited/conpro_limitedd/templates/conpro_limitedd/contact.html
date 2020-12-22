@@ -1,0 +1,65 @@
+{% extends "conpro_limitedd/base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+<title>Conpro Limited &#8211; Consulting Civil, Services &amp; Cost Engineers</title>
+</head>
+    <section>
+    <h1 class="top-head">Serving clients throuhout Ghana</h1>
+    <div class="container">
+        <div class="row no-gutters">
+          <div class="col-6 col-md-4">
+              <h3>Contact Conpro</h3>
+            <div>
+            <p>
+                Address:
+                BAC 52, 3rd Street, Baatsonaa, Tema.<br>
+                Plot 86 Block E, Daban, Kumasi.<br>
+                Telephone:<br>
+                0202114432, 0244328880, 0248585116<br>
+            </p>
+        </div>
+        </div>
+        <div class="colu">
+        <div class="colum">
+            <form>
+                <h3 style="color: #28156d!important;">Send a Message</h3>
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                  </div>
+                  <div class="col-7">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="labe">Message:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                </div>
+              </form>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+    <section class="maps">
+        <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" style="border: 0;" tabindex="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!
+            1m3!1d3971.1024868251743!2d-0.19171218485525218!3d5.551822495974642!2m3!1f0!2f0!3f0!3m2!1i1024!
+            2i768!4f13.1!3m3!1m2!1s0xfdf90862d8d26d7%3A0x8b8d960923971f44!2sCONPRO%20Limited!5e0!3m2!1sen!2sgh!
+            4v1587760134325!5m2!1sen!2sgh" width="AUTO" height="280" frameborder="0" allowfullscreen="allowfullscreen" 
+            aria-hidden="false"></iframe>
+        </div>
+    </section>
+
+{% endblock content %}
